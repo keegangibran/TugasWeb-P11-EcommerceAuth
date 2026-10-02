@@ -21,9 +21,6 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 // Test Multi-Role
-Route::middleware(['auth', 'role:admin'])->get('/admin', function () {
-    return 'Halaman Admin';
-})->name('admin.dashboard');
 
 Route::middleware(['auth', 'role:admin,editor'])->get('/management', function () {
     return 'Halaman Admin & Editor';

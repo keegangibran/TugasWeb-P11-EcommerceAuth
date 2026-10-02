@@ -38,6 +38,14 @@ Project menggunakan 7 tabel:
 
 Terdapat 8 kategori dan 51 produk hasil seeding.
 
+## Filament Admin Panel
+
+Admin panel menggunakan Filament untuk mengelola data:
+
+- Products
+- Categories
+- Users
+
 ## Dokumentasi Tinker
 
 ### Query 1 — Scope Available
