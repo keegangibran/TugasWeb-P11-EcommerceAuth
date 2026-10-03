@@ -78,12 +78,25 @@
                                 Stok: {{ $product->stock }} {{ $product->unit }}
                             </p>
 
-                            <a
-                                href="{{ route('shop.products.show', $product) }}"
-                                class="inline-block mt-4 text-sm font-semibold text-green-700 hover:text-green-800"
-                            >
-                                Lihat Detail →
-                            </a>
+                            <div class="mt-4 flex items-center gap-4">
+
+                                <a
+                                    href="{{ route('shop.products.show', $product) }}"
+                                    class="text-sm font-semibold text-green-700 hover:text-green-800"
+                                >
+                                    Lihat Detail →
+                                </a>
+
+                                @can('update', $product)
+                                    <a
+                                        href="{{ route('products.edit', $product) }}"
+                                        class="text-sm font-semibold text-gray-600 hover:text-gray-800"
+                                    >
+                                        Edit Produk
+                                    </a>
+                                @endcan
+
+                            </div>
 
                         </div>
                     </div>
