@@ -22,7 +22,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Bayam segar pilihan untuk kebutuhan masakan sehari-hari.',
                 'price' => 5000,
                 'stock' => 40,
-                'unit' => 'ikat',
+                'unit' => 'Ikat',
             ],
             [
                 'category' => 'Sayuran',
@@ -30,7 +30,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Kangkung segar dan berkualitas.',
                 'price' => 5000,
                 'stock' => 45,
-                'unit' => 'ikat',
+                'unit' => 'Ikat',
             ],
             [
                 'category' => 'Sayuran',
@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Wortel segar dengan kualitas terbaik.',
                 'price' => 12000,
                 'stock' => 35,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Sayuran',
@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Brokoli segar untuk berbagai hidangan.',
                 'price' => 18000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Sayuran',
@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Kentang segar untuk kebutuhan rumah tangga.',
                 'price' => 15000,
                 'stock' => 50,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Sayuran',
@@ -62,7 +62,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Tomat merah segar dan berkualitas.',
                 'price' => 10000,
                 'stock' => 45,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Sayuran',
@@ -70,7 +70,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Timun segar dan renyah.',
                 'price' => 8000,
                 'stock' => 40,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
 
             // =========================
@@ -82,7 +82,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Apel Fuji segar dengan rasa manis dan renyah.',
                 'price' => 35000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Buah-buahan',
@@ -90,7 +90,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Jeruk segar dengan rasa manis dan menyegarkan.',
                 'price' => 25000,
                 'stock' => 35,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Buah-buahan',
@@ -98,7 +98,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Pisang Cavendish matang dan siap dikonsumsi.',
                 'price' => 20000,
                 'stock' => 30,
-                'unit' => 'sisir',
+                'unit' => 'Sisir',
             ],
             [
                 'category' => 'Buah-buahan',
@@ -106,7 +106,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Mangga harum manis dengan rasa manis dan legit.',
                 'price' => 28000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Buah-buahan',
@@ -114,7 +114,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Semangka segar dan manis.',
                 'price' => 18000,
                 'stock' => 20,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Buah-buahan',
@@ -122,7 +122,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Pepaya matang dengan rasa manis.',
                 'price' => 15000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Buah-buahan',
@@ -130,7 +130,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Melon segar dengan tekstur lembut dan manis.',
                 'price' => 22000,
                 'stock' => 20,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
 
             // =========================
@@ -142,7 +142,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Daging dada ayam tanpa tulang.',
                 'price' => 45000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Daging',
@@ -150,7 +150,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Paha ayam segar berkualitas.',
                 'price' => 38000,
                 'stock' => 35,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Daging',
@@ -158,7 +158,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Daging sapi has dalam berkualitas.',
                 'price' => 135000,
                 'stock' => 20,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Daging',
@@ -166,7 +166,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Daging sapi giling segar.',
                 'price' => 110000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Daging',
@@ -174,7 +174,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Daging kambing segar pilihan.',
                 'price' => 125000,
                 'stock' => 15,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Daging',
@@ -182,7 +182,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Ati ayam segar untuk berbagai masakan.',
                 'price' => 30000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
 
             // =========================
@@ -194,7 +194,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Ikan nila segar untuk kebutuhan keluarga.',
                 'price' => 35000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Ikan & Seafood',
@@ -202,7 +202,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Ikan lele segar dan berkualitas.',
                 'price' => 28000,
                 'stock' => 35,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Ikan & Seafood',
@@ -210,7 +210,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Ikan kembung segar untuk berbagai olahan.',
                 'price' => 40000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Ikan & Seafood',
@@ -218,7 +218,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Udang vaname segar dan berkualitas.',
                 'price' => 85000,
                 'stock' => 20,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Ikan & Seafood',
@@ -226,7 +226,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Cumi-cumi segar untuk berbagai masakan.',
                 'price' => 75000,
                 'stock' => 20,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Ikan & Seafood',
@@ -234,7 +234,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Ikan tongkol segar pilihan.',
                 'price' => 40000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
 
             // =========================
@@ -246,7 +246,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Telur ayam negeri segar.',
                 'price' => 30000,
                 'stock' => 50,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Telur',
@@ -254,7 +254,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Telur ayam kampung segar.',
                 'price' => 45000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Telur',
@@ -262,7 +262,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Telur bebek segar berkualitas.',
                 'price' => 40000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Telur',
@@ -270,7 +270,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Telur puyuh segar.',
                 'price' => 18000,
                 'stock' => 35,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
             [
                 'category' => 'Telur',
@@ -278,7 +278,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Telur ayam dengan kandungan Omega 3.',
                 'price' => 40000,
                 'stock' => 25,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
 
             // =========================
@@ -290,7 +290,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Beras premium berkualitas untuk kebutuhan keluarga.',
                 'price' => 75000,
                 'stock' => 40,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
             [
                 'category' => 'Sembako',
@@ -298,7 +298,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Beras medium berkualitas dengan harga terjangkau.',
                 'price' => 65000,
                 'stock' => 45,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
             [
                 'category' => 'Sembako',
@@ -306,7 +306,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Minyak goreng untuk kebutuhan memasak sehari-hari.',
                 'price' => 38000,
                 'stock' => 50,
-                'unit' => 'liter',
+                'unit' => 'Liter',
             ],
             [
                 'category' => 'Sembako',
@@ -314,7 +314,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Gula pasir putih berkualitas.',
                 'price' => 18000,
                 'stock' => 50,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Sembako',
@@ -322,7 +322,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Tepung terigu serbaguna.',
                 'price' => 13000,
                 'stock' => 45,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Sembako',
@@ -330,7 +330,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Mi instan goreng praktis untuk kebutuhan sehari-hari.',
                 'price' => 3500,
                 'stock' => 100,
-                'unit' => 'pcs',
+                'unit' => 'Pcs',
             ],
             [
                 'category' => 'Sembako',
@@ -338,7 +338,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Mi instan kuah dengan rasa gurih.',
                 'price' => 3500,
                 'stock' => 100,
-                'unit' => 'pcs',
+                'unit' => 'Pcs',
             ],
 
             // =========================
@@ -350,7 +350,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Susu UHT full cream untuk keluarga.',
                 'price' => 18000,
                 'stock' => 40,
-                'unit' => 'liter',
+                'unit' => 'Liter',
             ],
             [
                 'category' => 'Susu & Produk Olahan',
@@ -358,7 +358,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Susu UHT rasa cokelat yang lezat.',
                 'price' => 19000,
                 'stock' => 35,
-                'unit' => 'liter',
+                'unit' => 'Liter',
             ],
             [
                 'category' => 'Susu & Produk Olahan',
@@ -366,7 +366,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Keju cheddar untuk berbagai hidangan.',
                 'price' => 25000,
                 'stock' => 30,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
             [
                 'category' => 'Susu & Produk Olahan',
@@ -374,7 +374,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Yogurt plain segar dengan rasa alami.',
                 'price' => 18000,
                 'stock' => 25,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
             [
                 'category' => 'Susu & Produk Olahan',
@@ -382,7 +382,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Butter berkualitas untuk memasak dan membuat kue.',
                 'price' => 30000,
                 'stock' => 25,
-                'unit' => 'pack',
+                'unit' => 'Pack',
             ],
             [
                 'category' => 'Susu & Produk Olahan',
@@ -390,7 +390,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Susu kental manis untuk minuman dan makanan.',
                 'price' => 14000,
                 'stock' => 40,
-                'unit' => 'kaleng',
+                'unit' => 'Kaleng',
             ],
 
             // =========================
@@ -402,7 +402,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Bawang merah segar untuk kebutuhan memasak.',
                 'price' => 35000,
                 'stock' => 40,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Bumbu & Rempah',
@@ -410,7 +410,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Bawang putih segar berkualitas.',
                 'price' => 32000,
                 'stock' => 40,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Bumbu & Rempah',
@@ -418,7 +418,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Cabai merah segar dengan rasa pedas.',
                 'price' => 45000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Bumbu & Rempah',
@@ -426,7 +426,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Cabai rawit segar dengan tingkat kepedasan tinggi.',
                 'price' => 50000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Bumbu & Rempah',
@@ -434,7 +434,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Jahe segar untuk bumbu dan minuman.',
                 'price' => 25000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Bumbu & Rempah',
@@ -442,7 +442,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Kunyit segar untuk berbagai masakan.',
                 'price' => 20000,
                 'stock' => 30,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
             [
                 'category' => 'Bumbu & Rempah',
@@ -450,7 +450,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lengkuas segar untuk bumbu masakan.',
                 'price' => 18000,
                 'stock' => 25,
-                'unit' => 'kg',
+                'unit' => 'Kg',
             ],
         ];
 

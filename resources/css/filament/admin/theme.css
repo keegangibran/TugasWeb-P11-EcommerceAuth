@@ -1,0 +1,745 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Condensed:wght@500;600;700&display=swap');
+
+
+/* =========================================================
+   FRESHMART COLOR PALETTE
+   ========================================================= */
+
+:root {
+    --fm-bg: #F1F3E0;
+    --fm-secondary: #D2DCB6;
+    --fm-accent: #A1BC98;
+    --fm-primary: #778873;
+    --fm-dark: #4F5F50;
+    --fm-text: #344236;
+    --fm-muted: #687568;
+    --fm-white: #FFFFFF;
+}
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+.fi-body,
+.fi-sidebar,
+.fi-topbar,
+.fi-main,
+.fi-modal,
+.fi-dropdown,
+.fi-fo-field-wrp,
+.fi-ta-table {
+    font-family: 'Manrope', sans-serif;
+}
+
+.fi-header-heading,
+.fi-page-header-heading,
+.fi-section-header-heading,
+.fi-wi-stats-overview-stat-value {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MAIN BACKGROUND
+   ========================================================= */
+
+.fi-main {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(161, 188, 152, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #F1F3E0 0%,
+            #F8F9F0 45%,
+            #FFFFFF 100%
+        ) !important;
+}
+
+.fi-main-ctn {
+    background: transparent;
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   PAGE HEADINGS
+   ========================================================= */
+
+.fi-header-heading,
+.fi-page-header-heading {
+    color: var(--fm-dark) !important;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.fi-sidebar {
+    background: var(--fm-primary);
+    border-right: none;
+}
+
+.fi-sidebar .fi-sidebar-item-label,
+.fi-sidebar .fi-sidebar-group-label {
+    color: var(--fm-bg);
+}
+
+.fi-sidebar .fi-sidebar-item-icon {
+    color: var(--fm-accent);
+}
+
+.fi-sidebar-item {
+    border-radius: 10px;
+    margin: 3px 10px;
+    transition:
+        background-color 180ms ease,
+        transform 180ms ease,
+        color 180ms ease;
+}
+
+.fi-sidebar-item:hover {
+    background-color: var(--fm-accent);
+    transform: translateX(3px);
+}
+
+.fi-sidebar-item:hover .fi-sidebar-item-label,
+.fi-sidebar-item:hover .fi-sidebar-item-icon {
+    color: var(--fm-dark);
+}
+
+.fi-sidebar-item.fi-active {
+    background-color: var(--fm-secondary);
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-label {
+    color: var(--fm-dark);
+    font-weight: 700;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-icon {
+    color: var(--fm-primary);
+}
+
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.fi-topbar {
+    background: var(--fm-white);
+    border-bottom: 1px solid rgba(119, 136, 115, 0.18);
+}
+
+
+/* =========================================================
+   BRANDING
+   ========================================================= */
+
+.fi-topbar .fi-logo,
+.fi-topbar .fi-brand,
+.fi-topbar .fi-brand-name {
+    color: var(--fm-dark) !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.fi-sidebar-header .fi-logo,
+.fi-sidebar-header .fi-brand,
+.fi-sidebar-header .fi-brand-name {
+    color: var(--fm-bg) !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DASHBOARD STAT CARDS
+   ========================================================= */
+
+.fi-wi-stats-overview-stat {
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid rgba(119, 136, 115, 0.15) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 16px rgba(79, 95, 80, 0.07) !important;
+    overflow: hidden;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.fi-wi-stats-overview-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(79, 95, 80, 0.12) !important;
+}
+
+.fi-wi-stats-overview-stat-label {
+    color: var(--fm-muted) !important;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+
+.fi-wi-stats-overview-stat-value {
+    color: var(--fm-dark) !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.fi-wi-stats-overview-stat-description {
+    color: var(--fm-primary) !important;
+}
+
+
+/* =========================================================
+   CHART WIDGET
+   ========================================================= */
+
+.fi-wi-chart {
+    align-self: start;
+    overflow: hidden;
+}
+
+.fi-wi-chart .fi-section {
+    background: var(--fm-white) !important;
+    border: 1px solid rgba(119, 136, 115, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(77, 92, 78, 0.08);
+    overflow: hidden;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.fi-wi-chart .fi-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(77, 92, 78, 0.12);
+    border-color: rgba(119, 136, 115, 0.28);
+}
+
+.fi-wi-chart .fi-section-header-heading {
+    color: var(--fm-dark) !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLES — GLOBAL
+   ========================================================= */
+
+.fi-ta-ctn {
+    background: var(--fm-white) !important;
+    border: 1px solid rgba(119, 136, 115, 0.12) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 6px 24px rgba(79, 95, 80, 0.08) !important;
+    overflow: hidden !important;
+}
+
+.fi-ta-header {
+    background: var(--fm-white) !important;
+}
+
+.fi-ta-header-toolbar {
+    background: var(--fm-white) !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 18px 20px !important;
+}
+
+.fi-ta-header-cell {
+    background: var(--fm-white) !important;
+    color: var(--fm-primary) !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid var(--fm-accent) !important;
+}
+
+.fi-ta-row {
+    background: var(--fm-white) !important;
+    transition: background-color 0.2s ease;
+}
+
+.fi-ta-row:hover {
+    background: var(--fm-bg) !important;
+}
+
+.fi-ta-text {
+    color: var(--fm-text) !important;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+
+/* =========================================================
+   TABLE ACTIONS
+   ========================================================= */
+
+.fi-ta-actions .fi-icon-btn {
+    color: var(--fm-primary) !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+}
+
+.fi-ta-actions .fi-icon-btn:hover {
+    color: var(--fm-dark) !important;
+    background: var(--fm-secondary) !important;
+}
+
+.fi-ta-actions .fi-icon-btn svg {
+    color: var(--fm-primary) !important;
+}
+
+.fi-ta-actions .fi-icon-btn:hover svg {
+    color: var(--fm-dark) !important;
+}
+
+
+/* =========================================================
+   TABLE PAGINATION
+   ========================================================= */
+
+.fi-ta-pagination {
+    background: var(--fm-white) !important;
+    border-top: 1px solid rgba(119, 136, 115, 0.12) !important;
+}
+
+.fi-ta-pagination button,
+.fi-ta-pagination a {
+    color: var(--fm-primary) !important;
+}
+
+.fi-ta-pagination button:hover,
+.fi-ta-pagination a:hover {
+    background: var(--fm-secondary) !important;
+    color: var(--fm-dark) !important;
+}
+
+.fi-ta-pagination button *,
+.fi-ta-pagination a * {
+    color: var(--fm-primary) !important;
+}
+
+
+/* =========================================================
+   DASHBOARD TABLE WIDGET
+   ========================================================= */
+
+.fi-wi-table {
+    align-self: start;
+}
+
+.fi-wi-table .fi-section {
+    background: var(--fm-white) !important;
+    border: 1px solid rgba(119, 136, 115, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(77, 92, 78, 0.08);
+    overflow: hidden;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.fi-wi-table .fi-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(77, 92, 78, 0.12);
+    border-color: rgba(119, 136, 115, 0.28);
+}
+
+
+/* =========================================================
+   DASHBOARD TABLE TOOLBAR
+   ========================================================= */
+
+.fi-wi-table .fi-ta-header {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.fi-wi-table .fi-ta-header-toolbar {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-top: 0 !important;
+}
+
+.fi-wi-table h2 {
+    color: var(--fm-primary) !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   DASHBOARD TABLE PAGINATION
+   ========================================================= */
+
+.fi-wi-table .fi-pagination {
+    background: transparent !important;
+    border-top: 1px solid rgba(119, 136, 115, 0.12);
+    padding-top: 12px;
+    color: var(--fm-primary) !important;
+}
+
+.fi-wi-table .fi-pagination button,
+.fi-wi-table .fi-pagination a {
+    color: var(--fm-primary) !important;
+    background-color: var(--fm-secondary) !important;
+    border: 1px solid var(--fm-primary) !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+.fi-wi-table .fi-pagination button *,
+.fi-wi-table .fi-pagination a * {
+    color: var(--fm-primary) !important;
+}
+
+.fi-wi-table .fi-pagination button:hover,
+.fi-wi-table .fi-pagination a:hover {
+    color: var(--fm-dark) !important;
+    background-color: var(--fm-accent) !important;
+    border-color: var(--fm-primary) !important;
+}
+
+.fi-wi-table .fi-pagination button:disabled,
+.fi-wi-table .fi-pagination a[aria-disabled="true"] {
+    color: var(--fm-primary) !important;
+    background-color: var(--fm-secondary) !important;
+    border-color: var(--fm-primary) !important;
+    opacity: 0.65;
+}
+
+.fi-wi-table .fi-pagination select {
+    color: var(--fm-primary) !important;
+    background-color: var(--fm-secondary) !important;
+    border-color: var(--fm-primary) !important;
+    font-weight: 600 !important;
+}
+
+.fi-wi-table .fi-pagination label,
+.fi-wi-table .fi-pagination span {
+    color: var(--fm-primary) !important;
+    font-weight: 600 !important;
+}
+
+.fi-wi-table .fi-pagination .fi-select,
+.fi-wi-table .fi-pagination .fi-select-trigger {
+    color: var(--fm-primary) !important;
+    background-color: var(--fm-secondary) !important;
+    border-color: var(--fm-primary) !important;
+    font-weight: 600 !important;
+}
+
+.fi-wi-table .fi-pagination .fi-select *,
+.fi-wi-table .fi-pagination .fi-select-trigger * {
+    color: var(--fm-primary) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.fi-btn {
+    border-radius: 10px;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        opacity 180ms ease;
+}
+
+.fi-btn:hover {
+    transform: translateY(-1px);
+}
+
+.fi-btn-color-primary {
+    background-color: var(--fm-primary) !important;
+}
+
+.fi-btn-color-primary:hover {
+    background-color: var(--fm-dark) !important;
+}
+
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.fi-badge {
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FORM INPUTS
+   ========================================================= */
+
+.fi-fo-field-wrp .fi-input,
+.fi-fo-field-wrp .fi-select-input,
+.fi-fo-field-wrp .fi-textarea {
+    border-color: rgba(119, 136, 115, 0.28);
+    border-radius: 10px;
+    transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.fi-fo-field-wrp .fi-input:focus,
+.fi-fo-field-wrp .fi-select-input:focus,
+.fi-fo-field-wrp .fi-textarea:focus {
+    border-color: var(--fm-accent);
+    box-shadow: 0 0 0 3px rgba(161, 188, 152, 0.35);
+}
+
+
+/* =========================================================
+   GLOBAL SEARCH
+   ========================================================= */
+
+.fi-global-search-field {
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+}
+
+.fi-global-search-field input,
+.fi-global-search-field input:focus,
+.fi-global-search-field input:focus-visible {
+    background: var(--fm-white) !important;
+    color: var(--fm-text) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.fi-global-search-field input::placeholder {
+    color: var(--fm-muted) !important;
+    opacity: 1 !important;
+}
+
+.fi-global-search-field svg {
+    color: var(--fm-primary) !important;
+}
+
+
+/* =========================================================
+   TABLE SEARCH
+   ========================================================= */
+
+.fi-ta-header-toolbar input,
+.fi-ta-header-toolbar input:focus,
+.fi-ta-header-toolbar input:focus-visible {
+    background: var(--fm-white) !important;
+    color: var(--fm-text) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.fi-ta-header-toolbar input::placeholder {
+    color: var(--fm-muted) !important;
+    opacity: 1 !important;
+}
+
+.fi-ta-header-toolbar svg {
+    color: var(--fm-primary) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .fi-wi-stats-overview-stat-value {
+        font-size: 1.6rem;
+    }
+
+    .fi-section,
+    .fi-wi-stats-overview-stat,
+    .fi-wi-chart,
+    .fi-wi-table,
+    .fi-ta-ctn {
+        border-radius: 12px;
+    }
+}
+
+/* =========================================================
+   COLUMN MANAGER CHECKBOX
+   ========================================================= */
+
+.fi-ta-col-manager input.fi-checkbox-input {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    width: 20px !important;
+    height: 20px !important;
+
+    border: 2px solid #A1BC98 !important;
+    border-radius: 5px !important;
+    background-color: #FFFFFF !important;
+
+    display: grid !important;
+    place-content: center !important;
+
+    cursor: pointer !important;
+}
+
+/* Checked */
+.fi-ta-col-manager input.fi-checkbox-input:checked {
+    background-color: #778873 !important;
+    border-color: #778873 !important;
+}
+
+/* Tanda centang */
+.fi-ta-col-manager input.fi-checkbox-input:checked::after {
+    content: "" !important;
+
+    width: 5px !important;
+    height: 10px !important;
+
+    border: solid #FFFFFF !important;
+    border-width: 0 2px 2px 0 !important;
+
+    transform: rotate(45deg) !important;
+    margin-top: -2px !important;
+}
+
+/* Checked + disabled tetap terlihat jelas */
+.fi-ta-col-manager input.fi-checkbox-input:checked:disabled {
+    background-color: #778873 !important;
+    border-color: #778873 !important;
+    opacity: 1 !important;
+    cursor: not-allowed !important;
+}
+
+/* Checkbox yang belum dicentang */
+.fi-ta-col-manager input.fi-checkbox-input:not(:checked) {
+    background-color: #FFFFFF !important;
+    border-color: #A1BC98 !important;
+}
+
+/* =========================================================
+   FILAMENT FORM FIELDS
+   ========================================================= */
+
+/* Form labels */
+.fi-fo-field-label,
+.fi-fo-field-label-content {
+    color: #778873 !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+/* Required mark */
+.fi-fo-field-label-required-mark {
+    color: #DC2626 !important;
+}
+
+/* Text inputs */
+.fi-input {
+    background-color: #FFFFFF !important;
+    color: #2F3A32 !important;
+    -webkit-text-fill-color: #2F3A32 !important;
+    border-color: #D2DCB6 !important;
+}
+
+/* Textarea */
+.fi-fo-textarea textarea,
+.fi-input.fi-fo-textarea {
+    background-color: #FFFFFF !important;
+    color: #2F3A32 !important;
+    -webkit-text-fill-color: #2F3A32 !important;
+}
+
+/* =========================================================
+   CREATE PAGE - SECONDARY ACTIONS
+   ========================================================= */
+
+.fi-ac-btn-action[wire\:click="createAnother"] {
+    color: #778873 !important;
+    -webkit-text-fill-color: #778873 !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #D2DCB6 !important;
+}
+
+.fi-ac-btn-action[wire\:click="createAnother"]:hover {
+    color: #556653 !important;
+    -webkit-text-fill-color: #556653 !important;
+    background-color: #F1F3E0 !important;
+    border-color: #A1BC98 !important;
+}
+
+.fi-ac-btn-action[x-on\:click*="window.history.back"] {
+    color: #778873 !important;
+    -webkit-text-fill-color: #778873 !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #D2DCB6 !important;
+}
+
+.fi-ac-btn-action[x-on\:click*="window.history.back"]:hover {
+    color: #556653 !important;
+    -webkit-text-fill-color: #556653 !important;
+    background-color: #F1F3E0 !important;
+    border-color: #A1BC98 !important;
+}
+
+/* =========================================================
+   SELECT INPUT
+   ========================================================= */
+
+.fi-select-input {
+    color: #2F3A32 !important;
+    -webkit-text-fill-color: #2F3A32 !important;
+    background-color: #FFFFFF !important;
+    font-family: 'Manrope', sans-serif !important;
+    border-radius: 12px !important;
+}
+
+/* Text yang dipilih */
+.fi-select-input option {
+    color: #2F3A32 !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Placeholder */
+.fi-select-input option[value=""] {
+    color: #778873 !important;
+}
+
+/* =========================================================
+   MOBILE PAGE HEIGHT
+   ========================================================= */
+
+html,
+body {
+    background-color: #F1F3E0 !important;
+}
+
+.fi-main {
+    min-height: 100vh !important;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(161, 188, 152, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #F1F3E0 0%,
+            #F8F9F0 45%,
+            #FFFFFF 100%
+        ) !important;
+}

@@ -98,7 +98,7 @@
                             </button>
 
                             <a
-                                href="{{ route('products.index') }}"
+                                href="{{ route('shop.products.index') }}"
                                 class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300"
                             >
                                 Batal

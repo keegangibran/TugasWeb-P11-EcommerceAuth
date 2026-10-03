@@ -8,17 +8,6 @@ use Illuminate\Support\Facades\Gate;
 
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        $products = Product::with('category')
-            ->latest()
-            ->paginate(10);
-
-        return view('products.index', compact('products'));
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -35,15 +24,7 @@ class ProductController extends Controller
     {
         //
     }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Product $product)
-    {
-        return view('products.show', compact('product'));
-    }
-
+    
     /**
      * Show the form for editing the specified resource.
      */
@@ -70,7 +51,7 @@ class ProductController extends Controller
         $product->update($validated);
 
         return redirect()
-            ->route('products.index')
+            ->route('shop.products.index')
             ->with('success', 'Produk berhasil diperbarui.');
     }
 
@@ -84,7 +65,7 @@ class ProductController extends Controller
         $product->delete();
 
         return redirect()
-            ->route('products.index')
+            ->route('shop.products.index')
             ->with('success', 'Produk berhasil dihapus.');
     }
 }

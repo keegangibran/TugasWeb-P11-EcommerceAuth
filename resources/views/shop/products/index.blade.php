@@ -1,54 +1,41 @@
 <x-app-layout>
+
     <x-slot name="header">
-        <div class="flex items-center justify-between">
-            <div>
-                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                    FreshMart
-                </h2>
-                <p class="text-sm text-gray-500 mt-1">
-                    Produk segar dan kebutuhan sehari-hari
-                </p>
-            </div>
+        <div>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                Produk FreshMart
+            </h2>
+
+            <p class="text-sm text-gray-500 mt-1">
+                Temukan kebutuhan sehari-hari dan bahan segar pilihan.
+            </p>
         </div>
     </x-slot>
 
     <div class="py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            {{-- Welcome --}}
-            <div class="bg-gradient-to-r from-green-700 to-green-600 rounded-2xl p-6 sm:p-8 mb-8 text-white shadow-sm">
-                <p class="text-sm opacity-90 mb-1">
-                    Selamat datang,
-                </p>
-
-                <h1 class="text-2xl sm:text-3xl font-bold">
-                    {{ auth()->user()->name }} 👋
+            {{-- Header --}}
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold text-gray-800">
+                    Semua Produk
                 </h1>
 
-                <p class="mt-2 text-sm sm:text-base opacity-90">
-                    Temukan bahan segar dan kebutuhan sehari-hari di FreshMart.
+                <p class="text-gray-500 mt-1">
+                    Produk yang tersedia di FreshMart
                 </p>
             </div>
 
-            {{-- Products --}}
-            <div class="mb-5">
-                <h2 class="text-xl font-semibold text-gray-800">
-                    Produk Tersedia
-                </h2>
-
-                <p class="text-sm text-gray-500 mt-1">
-                    Pilihan produk FreshMart untuk kamu
-                </p>
-            </div>
-
+            {{-- Product Grid --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
                 @forelse ($products as $product)
 
-                    <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
 
-                        {{-- Product image --}}
-                        <div class="h-40 bg-green-50 flex items-center justify-center">
+                        {{-- Image --}}
+                        <div class="h-44 bg-green-50 flex items-center justify-center">
+
                             @if ($product->image)
                                 <img
                                     src="{{ $product->image }}"
@@ -58,15 +45,17 @@
                             @else
                                 <span class="text-5xl">🛒</span>
                             @endif
+
                         </div>
 
+                        {{-- Content --}}
                         <div class="p-5">
 
                             <span class="inline-block text-xs font-medium bg-green-100 text-green-700 px-2.5 py-1 rounded-full">
                                 {{ $product->category->name }}
                             </span>
 
-                            <h3 class="font-semibold text-gray-800 mt-3 line-clamp-2">
+                            <h3 class="font-semibold text-gray-800 mt-3">
                                 {{ $product->name }}
                             </h3>
 
@@ -85,12 +74,22 @@
                                 Lihat Detail →
                             </a>
 
+                            @can('update', $product)
+                                <a
+                                    href="{{ route('products.edit', $product) }}"
+                                    class="inline-block mt-4 text-sm font-medium text-green-700 hover:text-green-800"
+                                >
+                                    Edit Produk
+                                </a>
+                            @endcan
+
                         </div>
+
                     </div>
 
                 @empty
 
-                    <div class="col-span-full bg-white rounded-xl p-8 text-center text-gray-500">
+                    <div class="col-span-full bg-white rounded-2xl p-8 text-center text-gray-500">
                         Belum ada produk tersedia.
                     </div>
 
@@ -98,6 +97,12 @@
 
             </div>
 
+            {{-- Pagination --}}
+            <div class="mt-8">
+                {{ $products->links() }}
+            </div>
+
         </div>
     </div>
+
 </x-app-layout>
